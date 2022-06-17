@@ -1,0 +1,65 @@
+:root {
+    --containerSize: 60vmin;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.echec {
+    width: var(--containerSize);
+    height: var(--containerSize);
+    background-color: bisque;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cell {
+    width: calc(var(--containerSize) / 8);
+    height: calc(var(--containerSize) / 8);
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.black {
+    background-color: rgba(0, 0, 0, 0.219);
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+
+.content-timer {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.151);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+    gap: 25px;
+}
+
+.player {
+    font-size: 30px;
+}
+
+.time {
+    font-size: 40px;
+    font-weight: 700;
+}
